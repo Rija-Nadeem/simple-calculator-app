@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Calculator</title>
+ <script src="app.js"></script>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <br><br>
+  <div class="calculator">
+     <table>
+        <tr>
+         <td colspan="4">
+            <h4>Result:</h4>
+         </td>
+        </tr>
+
+        <tr>
+         <td colspan="4">
+            <input id="result" type="text">
+         </td>
+        </tr>
+
+        <tr>
+         <td colspan="4">
+            <h4>Expression:</h4>
+         </td>
+      </tr>
+
+      <tr>
+       <td colspan="4">
+          <input id='Exp' type="text">
+       </td>
+      </tr>
+       
+         <tr>
+            <td colspan="3" class="clear-input text-center" onclick="clearResult()">
+               C
+            </td>
+            <td  class="signbuttons text-center" onclick="getNumber('/')">
+               /
+            </td>
+         </tr>
+         <tr>
+            <td class="numberbuttons text-center" onclick="getNumber('7')">
+               7
+            </td>
+            <td class="numberbuttons text-center" onclick="getNumber('8')">
+               8
+            </td>
+            <td class="numberbuttons text-center" onclick="getNumber('9')">
+               9
+            </td>
+            <td class="signbuttons text-center" onclick="getNumber('*')">
+               X
+            </td>
+         </tr>
+         <tr>
+            <td class="numberbuttons text-center" onclick="getNumber('4')">
+               4
+            </td>
+            <td class="numberbuttons text-center" onclick="getNumber('5')">
+               5
+            </td>
+            <td class="numberbuttons text-center" onclick="getNumber('6')">
+               6
+            </td>
+            <td class="signbuttons text-center" onclick="getNumber('-')">
+               -
+            </td>
+         </tr>
+         <tr>
+            <td onclick="getNumber('1')" class="numberbuttons text-center">
+              1
+            </td>
+            <td onclick="getNumber('2')"  class="numberbuttons text-center" >
+               2
+            </td>
+            <td onclick="getNumber('3')" class="numberbuttons text-center" >
+               3
+            </td>
+            <td class="signbuttons text-center" onclick="getNumber('+')">
+               +
+            </td>
+         </tr>
+         <tr>
+            <td colspan="3" class="numberbuttons text-center" onclick="getNumber('0')">
+               0
+            </td>
+            <td  class="numberbuttons text-center" onclick="getResult('=')" >
+               =
+            </td>
+         </tr>
+
+      
+     </table>
+
+  </div>
+
+</body>
+</html>
